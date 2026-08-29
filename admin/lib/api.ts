@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'kinangotti-api-production.up.railway.app/api';
+const API_URL = process.env.NEXT_PUB_API_URL || 'https://kinangotti-api-production.up.railway.app/api';
 
 const api = axios.create({
     baseURL: API_URL,
