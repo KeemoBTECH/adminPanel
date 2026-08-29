@@ -58,7 +58,7 @@ export default function NewNoticePage() {
 
                         <div className="space-y-2">
                             <Label htmlFor="category">Category</Label>
-                            <Select value={category} onValueChange={setCategory}>
+                            <Select value={category} onValueChange={(value) => setCategory(value ?? "GENERAL")}>
                                 <SelectTrigger>
                                     <SelectValue placeholder="Select category" />
                                 </SelectTrigger>

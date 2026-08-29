@@ -85,7 +85,9 @@ export default function ApplicationsPage() {
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <span className="text-sm text-gray-500">Update:</span>
-                                    <Select value={app.status} onValueChange={(val) => updateStatus(app._id, val)}>
+                                    <Select value={app.status} onValueChange={(val) => {
+                                        if (val) updateStatus(app._id, val);
+                                    }}>
                                         <SelectTrigger className="w-36">
                                             <SelectValue />
                                         </SelectTrigger>
