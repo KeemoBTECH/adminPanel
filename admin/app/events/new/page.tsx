@@ -11,7 +11,7 @@ import { Switch } from "@/components/ui/switch";
 import { Loader2, ArrowLeft, Upload, ImageIcon } from "lucide-react";
 import Link from "next/link";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_URL = process.env.NEXT_PUB_API_URL || "https://kinangotti-api-production.up.railway.app/api";
 
 export default function NewEventPage() {
     const router = useRouter();
